@@ -1,5 +1,6 @@
 package com.qltv;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -7,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         List<Book> bookList = new ArrayList<>();
-        String filePath = "C:\\java\\QLTV\\src\\main\\resources\\Library";
+        String filePath = new File("src/main/resources/Library.txt").getAbsolutePath();
         bookList = LibraryService.loadLibrary(filePath);
         Scanner input = new Scanner(System.in);
         int select;
