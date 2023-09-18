@@ -8,7 +8,6 @@ public class Main {
     public static void main(String[] args) {
         List<Book> bookList = new ArrayList<>();
         String filePath = "C:\\java\\QLTV\\src\\main\\resources\\Library";
-        LibraryService libraryService;
         bookList = LibraryService.loadLibrary(filePath);
         Scanner input = new Scanner(System.in);
         int select;
